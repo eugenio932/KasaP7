@@ -1,17 +1,17 @@
-
-.apartment__description{
+.apartment__description {
   flex-basis: 50%;
   margin-top: 10px;
-  &__box{
+
+  &__box {
     overflow: hidden;
   }
-  
+
   @media screen and (max-width: 810px) {
     flex-direction: column;
   }
- 
-  .apartment__description__title{
-    background-color:#F56C6C; ;
+
+  .apartment__description__title {
+    background-color: #F56C6C;
     color: #F6F6F6;
     padding: 13px;
     border-radius: 10px 10px;
@@ -20,12 +20,14 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    i{
+
+    i {
       font-size: 24px;
       cursor: pointer;
     }
   }
-  .apartment__description__content{
+
+  .apartment__description__content {
     background-color: #F6F6F6;
     color: #F56C6C;
     padding: 20px;
@@ -34,27 +36,37 @@
     position: relative;
     top: -4px;
     z-index: -1;
-    animation: slidein 0.5s  ease-in-out;
-    &.hidden{
-      animation: slideout 0.5s ease-in-out;
+    opacity: 0;
+
+    &.visible {
+      animation: slidein 0.5s ease-in-out;
+      opacity: 1;
     }
-    
+
+    &.hidden {
+      animation: slideout 0.5s ease-in-out;
+      opacity: 0;
+    }
   }
 }
 
 @keyframes slidein {
-  0%{
+  0% {
     transform: translateY(-100%);
-    opacity: 0;
   }
-  100%{
-    transform: translateX(0);
-    opacity: 1;
+  100% {
+    transform: translateY(0);
   }
 }
 
-@keyframes slideout{
-  to{
-    transform: translateY(-100%c);
+@keyframes slideout {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }
+
+
+

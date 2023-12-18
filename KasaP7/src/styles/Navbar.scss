@@ -1,98 +1,67 @@
-// @use"../scss/variables.scss" as colors;
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 3rem;
-  .menu{
+  padding-inline: 1.5rem;
+
+  .navbar_logo {
+    max-width: 100%;
+    height: auto;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 430px) {
+      img {
+        width: 100px;
+      }
+    }
+
+    @media screen and (max-width: 310px) {
+      img {
+        width: 80px;
+      }
+    }
+
+    @media screen and (max-width: 290px) {
+      img {
+        width: 65px;
+      }
+    }
+  }
+
+  .menu {
     display: flex;
     gap: 20px;
-  }
-}
-
-
-
-
-
-// .navbar{
-//    display: flex;
-//    justify-content: space-between; 
-//    align-items:center;
-//    padding: 0 3rem;
-//    margin-bottom: 40px;
-//   color: colors.$color-primary;
-//   @media screen and (max-width: 810px){
-//     text-transform: uppercase;
-//     font-weight: 400;
-//   }
-// }
-// .menu{
-//   display: flex;
-//   gap: 20px;
   
-// }
-// .menu>a{
-//   text-decoration: none;
-//   //  margin-left: 20px;
-//   color: var(--red);
-// }
+    span {
+      color: #f56c6c;
+      text-decoration: none;
+    }
+  
+    &.active {
+      text-decoration: underline;
+      color: #f56c6c;
+    }
+  
+    @media screen and (max-width: 430px) {
+      span {
+        text-transform: uppercase;
+      }
+    }
+  
+    @media screen and (max-width: 280px) {
+      gap: 10px;
+  
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+  
 
-// .navbar a:hover{
-//   text-decoration: underline;
-// }
-// .navbar a.active{
-//   text-decoration: underline ;
-// }
 
-
-// @use "../scss/variables.scss" as colors;
-
-// .navbar {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 0 3rem;
-//   margin-bottom: 40px;
-//   color: colors.$color-primary;
-
-//   a {
-//     text-decoration: none;
-//     color: colors.$color-primary; // Assurez-vous d'utiliser la variable de couleur appropriée
-//   }
-
-//   a:hover, a.active {
-//     text-decoration: underline;
-//   }
-
-//   @media screen and (max-width: 810px) {
-//     text-align: center;
-//     padding: 1rem; // Ajoutez un padding approprié pour les petits écrans
-//   }
-
-//   @media screen and (max-width: 465px) {
-//     .navbar {
-//       flex-direction: row;
-//       text-align: center;
-//       padding: 1rem; // Ajoutez un padding approprié pour les petits écrans
-//     }
-
-//     .menu {
-//       flex-direction: row;
-//       align-items: center;
-//       justify-content: space-around;
-//     }
-//   }
-// }
-
-// .menu {
-//   display: flex;
-//   gap: 20px;
-
-//   @media screen and (max-width: 810px) {
-//     flex-direction: row; // Assurez-vous que la direction reste en ligne
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
-
+}
 

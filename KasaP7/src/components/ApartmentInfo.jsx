@@ -1,5 +1,4 @@
 import React from 'react'
-// import "./ApartmentInfo.scss"
 import "../styles/ApartmentInfo.scss";
 
  export function ApartmentInfo(props) {

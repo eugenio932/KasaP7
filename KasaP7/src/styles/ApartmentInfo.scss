@@ -22,7 +22,7 @@
     align-items: end;
     line-height: 20px;
     align-self: center;
-    color: #F56C6C;;
+    color: #F56C6C;
   }
   .apartment__owner__circle img{
     height: 50px;
@@ -48,7 +48,16 @@
     background-color: #F56C6C;;
     color:#F6F6F6;
     padding: 1px 30px;
-    border-radius: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width:560px) {
+      box-sizing: border-box;
+    }
   }
   
 }

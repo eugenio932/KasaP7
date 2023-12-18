@@ -13,15 +13,15 @@ function Navbar() {
     </NavLink>
     
     <div className= "menu">
-      <NavLink to ="/">
+      <NavLink to ="/" className="active">
          
-            Accueil
+            <span>Accueil</span>
           
         </NavLink>
 
       <NavLink to ="/about">
         
-          A propos
+          <span>A propos</span>
         
         </NavLink>
     </div>
